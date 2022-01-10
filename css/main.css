@@ -86,6 +86,49 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
+body {
+    font-family: 'Open Sans', sans-serif;
+       font-size: 1em;
+       text-align:left;
+}
+
+ 
+ul, 
+ol {
+ list-style-type: none;
+}
+
+a {
+	color: #e2e3ed;
+     text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size:1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size:1.125em;
+  margin: 20px 0;
+}
+ 
+p {
+  font-family: 'Open Sans', sans-serif;
+	font-size:1.285em;
+}
+ 
+address {
+  font-style: normal;
+}
 
    .content-wrapper{
     width:90%;
@@ -154,7 +197,8 @@ footer p{
 }
 
 .footer .content-wrapper{
-  width:100%;
+  width:55%;
+  margin-bottom:50px;
 }
 
 footer .copyright {
@@ -184,7 +228,6 @@ aside{
 .features{ 
   display:flex;
   justify-content:center;
-  align-items: center;
   flex-flow:row wrap;
   
 }
@@ -214,14 +257,19 @@ features p{
 .reviews{
   display:flex;
   justify-content:center;
-  align-items: center;
   flex-wrap: row wrap;
 }
 
 .reviews h2{
   width:55%;
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
   margin: 20px 0;
 }
+
 /* about page */
 
 .mission{
@@ -233,10 +281,14 @@ features p{
 
 .contact-section {
   display:flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   flex-wrap: row wrap;
   margin:0;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /* FAQ */
@@ -251,7 +303,7 @@ features p{
 .faqs .content-wrapper{
   margin: 50px 0 0 0;
   display:flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   flex-wrap: row wrap;
 }
@@ -361,7 +413,8 @@ faq-content{
   /* Header */
 
   header {
-justify-content:space-between;
+justify-content:space-around;
+padding: 33px 0;
 }
 
   header .content-wrapper {
@@ -409,7 +462,7 @@ justify-content:space-between;
   }
 
   .features .features-item-description {
-      width: 50%;
+      width: 62%;
   }
 
   /* Reviews */
@@ -470,12 +523,16 @@ justify-content:space-between;
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-    .faq .content-wrapper {
+   header{
+     padding:15px 0;
+   } 
+   
+   .faq .content-wrapper {
         justify-content: space-between;
     }
     
     .faq-content {
-        flex-basis: 40%;
+        flex-basis: 45%;
     }
  
     .faq h2 {
@@ -599,4 +656,4 @@ FAQ Page
    h3 {
      page-break-after: avoid;
    }
- }
+ 
